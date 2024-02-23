@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaTek</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html" class="logo">MegaTek</a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" style="filter: invert(100%);"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            
+            <div class="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio eius obcaecati! Molestiae, deleniti quisquam a iusto rerum laboriosam ex ullam facilis reprehenderit quis magnam amet explicabo placeat distinctio unde excepturi. Debitis ipsum itaque eaque dicta odio voluptatum dolores minima repellat quod beatae doloremque quam rem alias dolorum placeat quibusdam quasi id maiores neque cupiditate repellendus, numquam amet tempora reiciendis? A illum quidem voluptatum aperiam, facere eum, blanditiis magnam fugiat possimus inventore voluptatem itaque sint dolor repellat totam non, tempora dolores odio eveniet quos quo sequi ea? Aspernatur dolorem maiores, modi a, distinctio assumenda laborum atque quisquam ut reprehenderit excepturi vero! Architecto totam blanditiis eius quisquam eaque autem dicta ipsa quas vero illo, ut at obcaecati suscipit quaerat dolor cum ex minima saepe doloribus nesciunt impedit. Dolorum temporibus minus pariatur distinctio qui. Libero culpa reiciendis, molestiae at doloremque commodi magnam temporibus numquam consectetur a sint est pariatur odit. Maiores explicabo veniam, veritatis enim assumenda consectetur repudiandae perspiciatis sequi molestiae sed ipsam facere quas, ut ex doloribus totam. Nisi nobis, mollitia enim optio veritatis suscipit laudantium commodi incidunt! Voluptate architecto consectetur dolorum perspiciatis voluptatibus alias delectus accusamus, error inventore atque earum ut tempore. Ipsum sapiente accusamus, ducimus excepturi quis ex fugiat.</p>
+            </div>
+
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="index.html" class="logo">MegaTek</a>
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Kalan</p>
+        </div>
+    </div>
+
+    <!-- javascript -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+
+        const navbar = document.querySelector('#navbar');
+let top = navbar.offsetTop;
+function stickynavbar() {
+  if (window.scrollY >= top) {    
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');    
+  }
+}
+window.addEventListener('scroll', stickynavbar);
+    </script>
+
+</body>
+
+</html>
